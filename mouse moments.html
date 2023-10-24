@@ -1,0 +1,29 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Events</title>
+  <link rel="stylesheet" href="project css.css">
+  <script src="script.js"></script>
+</head>
+<body class="body2">
+  <h1>Mouse Events</h1>
+  <div id="box"></div>
+
+  <script>
+    var box = document.getElementById("box");
+
+    box.addEventListener("click", function() {
+      alert("You clicked the box!");
+    });
+
+    box.addEventListener("mouseover", function() {
+      box.style.backgroundColor = "red";
+    });
+
+    box.addEventListener("mouseout", function() {
+      box.style.backgroundColor = "white";
+    });
+  </script>
+</body>
+</html>
